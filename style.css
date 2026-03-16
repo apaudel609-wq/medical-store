@@ -282,6 +282,109 @@ body {
 }
 
 
+/* Refining Layout Fix */
+.main-header {
+    border-bottom: none; /* Removing border to let nav menu handle separation */
+}
+
+/* Refined Nav Menu Styling */
+.refined-nav {
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.refined-nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.all-categories-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: #111111;
+    font-size: 15px;
+    padding: 15px 0;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.main-nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-nav-links a {
+    text-decoration: none;
+    color: #111111;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.main-nav-links a.active, .main-nav-links a:hover {
+    color: #009688;
+}
+
+.main-nav-links a i {
+    font-size: 10px;
+    color: #888888;
+}
+
+/* Badges within Nav */
+.main-nav-links .badge {
+    font-size: 9px;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 4px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.main-nav-links .badge.sale {
+    background-color: #009688;
+}
+
+.main-nav-links .badge.hot {
+    background-color: #ff1744;
+}
+
+.best-deals {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #009688;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.best-deals i {
+    font-size: 18px;
+    border: 2px solid #009688;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .main-header .container {
@@ -292,17 +395,20 @@ body {
         order: 3;
         max-width: 100%;
     }
+    .main-nav-links {
+        display: none; /* Simple mobile menu behavior */
+    }
 }
 
 @media (max-width: 768px) {
     .top-bar .container {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
     }
     
     .top-bar-right {
         justify-content: center;
+        margin-top: 10px;
     }
 
     .header-contact {

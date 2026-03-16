@@ -1,0 +1,107 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    background-color: #009688; /* Teal color from the image */
+    color: #ffffff;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.top-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.top-bar p {
+    margin: 0;
+    letter-spacing: 0.3px;
+    font-size: 13px;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.top-bar a:hover {
+    opacity: 0.8;
+}
+
+.shop-now {
+    text-decoration: underline !important;
+    font-weight: 700;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.track-order {
+    margin-right: 0;
+}
+
+.divider {
+    margin: 0 15px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.selector:hover {
+    opacity: 0.8;
+}
+
+.flag-icon {
+    width: 18px;
+    height: auto;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+/* Chevron Down Mockup using CSS */
+.chevron-down {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2.5px;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .top-bar-right {
+        justify-content: center;
+    }
+}

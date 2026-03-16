@@ -1186,3 +1186,331 @@ body {
         transform: translateY(-50%) translateX(10px);
     }
 }
+/* Health Commitment Banner Styling */
+.health-commitment {
+    background-color: #f9f5f0;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.commitment-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.commitment-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.commitment-subtitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #444444;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.commitment-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.commitment-desc {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.btn-shop-now {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #009688;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-shop-now:hover {
+    background-color: #00796b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 150, 136, 0.2);
+}
+
+.commitment-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.commitment-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Health Commitment */
+@media (max-width: 992px) {
+    .health-commitment {
+        padding: 60px 0;
+    }
+    .commitment-title {
+        font-size: 38px;
+    }
+    .commitment-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .commitment-text {
+        text-align: center;
+        max-width: 100%;
+    }
+    .commitment-image {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .commitment-title {
+        font-size: 30px;
+    }
+    .btn-shop-now {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+/* Triple Promo Banners Styling */
+.triple-promo-banners {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.promo-card {
+    border-radius: 10px;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Background Patterns (Concentric Circles) */
+.promo-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, transparent 20%, rgba(255,255,255,0.4) 21%, transparent 22%, transparent 30%, rgba(255,255,255,0.4) 31%, transparent 32%);
+    background-size: 60px 60px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bg-light-blue { background-color: #e0f2f7; }
+.bg-light-beige { background-color: #f9f5f0; }
+.bg-light-mint { background-color: #e0f7f1; }
+
+.promo-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    gap: 15px;
+}
+
+.promo-image {
+    flex: 0 0 110px;
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.promo-text {
+    flex: 1;
+    text-align: right;
+}
+
+.promo-discount {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+.promo-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.promo-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 800;
+    color: #009688;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.promo-link:hover {
+    color: #00796b;
+    border-color: #00796b;
+}
+
+/* Responsive Promo Banners */
+@media (max-width: 1200px) {
+    .promo-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .promo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+    .promo-card {
+        padding: 20px;
+    }
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-grid .product-card {
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid #e1e1e1;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.featured-grid .product-card:last-child {
+    border-right: none;
+}
+
+.btn-product-cart {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    color: #111111;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-product-cart:hover {
+    background-color: #009688;
+    color: #ffffff;
+}
+
+/* Featured Products Responsive */
+@media (max-width: 1200px) {
+    .featured-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .featured-grid .product-card:nth-child(4) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .featured-grid .product-card:nth-child(3n) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-grid .product-card:nth-child(2n) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    .featured-grid .product-card {
+        border-right: none;
+        border-bottom: 1px solid #e1e1e1;
+    }
+}

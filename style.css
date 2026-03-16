@@ -533,6 +533,120 @@ body {
     }
 }
 
+
+/* Promotional Banners Styling */
+.promo-banners {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.promo-banners .container-flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.promo-card {
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-green {
+    background-color: #e8f5e9; /* Light green */
+    /* Adding subtle pattern */
+    background-image: radial-gradient(#c8e6c9 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+}
+
+.card-beige {
+    background-color: #fff8e1; /* Light beige/yellow */
+    background-image: radial-gradient(#ffecb3 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+}
+
+.promo-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.promo-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: #444444;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.promo-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.promo-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.promo-card:hover .promo-image img {
+    transform: scale(1.05);
+}
+
+/* Specific button override if needed */
+.promo-card .btn-shop-now {
+    padding: 12px 30px;
+    font-size: 13px;
+}
+
+/* Responsive Promotional Banners */
+@media (max-width: 991px) {
+    .promo-banners .container-flex {
+        flex-direction: column;
+    }
+    .promo-card {
+        padding: 30px;
+    }
+    .promo-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .promo-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .promo-image {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .main-header .container {

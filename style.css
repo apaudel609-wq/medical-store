@@ -98,10 +98,214 @@ body {
     .top-bar .container {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* Main Header Styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 25px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.main-header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid #009688;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009688;
+    font-size: 20px;
+    margin-right: 12px;
+    position: relative;
+}
+
+/* Creating the medical cross look inside the circle */
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 6px;
+    background: #009688;
+    display: none; /* Hide FontAwesome placeholder if needed, but we used i tag */
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #009688;
+    border-radius: 6px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.category-dropdown {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.category-dropdown i {
+    font-size: 10px;
+    color: #888888;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #dddddd;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333333;
+}
+
+.search-bar input::placeholder {
+    color: #999999;
+}
+
+.search-bar button {
+    background-color: #009688;
+    color: #ffffff;
+    border: none;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #00796b;
+}
+
+/* contact info */
+.header-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 2px;
+}
+
+.phone-number {
+    font-size: 16px;
+    font-weight: 700;
+    color: #009688;
+}
+
+/* header icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-icon-item {
+    position: relative;
+    font-size: 22px;
+    color: #333333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header-icon-item:hover {
+    color: #009688;
+}
+
+.header-icon-item i {
+    font-weight: 300;
+}
+
+.header-icon-item .badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #009688;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .main-header .container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .search-bar {
+        order: 3;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
         gap: 10px;
     }
     
     .top-bar-right {
         justify-content: center;
+    }
+
+    .header-contact {
+        display: none;
     }
 }

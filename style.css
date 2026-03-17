@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 header + main > section:first-child {
@@ -550,7 +550,7 @@ header + main > section:first-child {
 
 /* Promotional Banners Styling */
 .promo-banners {
-    padding: 60px 0;
+    padding: 35px 0;
     background-color: #ffffff;
 }
 
@@ -694,7 +694,7 @@ header + main > section:first-child {
 
 /* Popular Categories Styling */
 .popular-categories {
-    padding: 60px 0;
+    padding: 35px 0;
     text-align: center;
     background-color: #ffffff;
 }
@@ -703,7 +703,7 @@ header + main > section:first-child {
     font-size: 32px;
     font-weight: 800;
     color: #111111;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .categories-grid {
@@ -780,7 +780,7 @@ header + main > section:first-child {
 
 /* Latest Products Styling */
 .latest-products {
-    padding: 60px 0;
+    padding: 35px 0;
     background-color: #ffffff;
     text-align: center; /* Center the title */
 }
@@ -998,7 +998,7 @@ header + main > section:first-child {
 
 /* Deal Of The Week Styling */
 .deal-of-the-week {
-    padding: 60px 0;
+    padding: 35px 0;
     background-color: #ffffff;
     text-align: center;
 }
@@ -1203,7 +1203,7 @@ header + main > section:first-child {
 /* Health Commitment Banner Styling */
 .health-commitment {
     background-color: #f9f5f0;
-    padding: 60px 0;
+    padding: 35px 0;
     overflow: hidden;
 }
 
@@ -1314,7 +1314,7 @@ header + main > section:first-child {
 
 /* Featured Products Section */
 .featured-products {
-    padding: 60px 0;
+    padding: 35px 0;
     background-color: #ffffff;
     text-align: center;
 }
@@ -1401,7 +1401,7 @@ header + main > section:first-child {
 }
 /* Site Features Section */
 .site-features {
-    padding: 80px 0;
+    padding: 45px 0;
     margin-bottom: 20px;
     background-color: #ffffff;
 }
@@ -1469,7 +1469,7 @@ header + main > section:first-child {
 /* Client Testimonials Section */
 .testimonials {
     background-color: #f1f7f6;
-    padding: 80px 0;
+    padding: 45px 0;
     overflow: hidden;
 }
 
@@ -1606,7 +1606,7 @@ header + main > section:first-child {
 
 /* Newsletter Section Styling */
 .newsletter {
-    padding: 80px 0;
+    padding: 45px 0;
     background-color: #ffffff;
     text-align: center;
 }
@@ -1622,7 +1622,7 @@ header + main > section:first-child {
     font-weight: 800;
     color: #111111;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -1698,13 +1698,13 @@ header + main > section:first-child {
 
 /* Website Footer Styling */
 .main-footer {
-    padding-top: 80px;
+    padding-top: 45px;
     background-color: #ffffff;
     border-top: 1px solid #f0f0f0;
 }
 
 .footer-top {
-    padding-bottom: 60px;
+    padding-bottom: 35px;
 }
 
 .container-footer {
@@ -1801,7 +1801,7 @@ header + main > section:first-child {
 }
 
 .footer-bottom {
-    padding: 30px 0;
+    padding: 30px 0 10px 0;
     border-top: 1px solid #f0f0f0;
     background-color: #fafafa;
 }
